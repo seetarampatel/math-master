@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "130308811837",
+    "firebase_url": "https://all-in-one-math.firebaseio.com",
+    "project_id": "all-in-one-math",
+    "storage_bucket": "all-in-one-math.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130308811837:android:f224e89a61a22a45334e54",
+        "android_client_info": {
+          "package_name": "com.example.all_in_one_math"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130308811837-102oc5q9r80agscff809hjhqhle3h2pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_9xR9maMTDhAV7PzSEIhyAHksxBvECE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130308811837-102oc5q9r80agscff809hjhqhle3h2pt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
