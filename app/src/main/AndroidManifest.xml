@@ -9,6 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FormulaActivity"></activity>
+        <activity
+            android:name=".FormulaListActivity"
+            android:label="@string/title_formula_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FormulaDetailActivity"
+            android:label="@string/title_formula_detail"
+            android:parentActivityName=".FormulaListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.all_in_one_math.FormulaListActivity" />
+        </activity>
+        <activity
+            android:name=".FormulaActivityListActivity"
+            android:label="@string/title_formulaactivity_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FormulaActivityDetailActivity"
+            android:label="@string/title_formulaactivity_detail"
+            android:parentActivityName=".FormulaActivityListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.all_in_one_math.FormulaActivityListActivity" />
+        </activity>
+        <activity android:name=".AboutUsActivity" />
         <activity android:name=".SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,8 +44,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

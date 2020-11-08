@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+
+    <TextView
+        android:id="@+id/aboutUsHeadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorPrimary"
+        android:text="@string/about_us_header"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading"
+        android:textFontWeight="700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_top_padding"
+        android:paddingLeft="@dimen/title_left_padding"/>
+
+
+    <LinearLayout
+        android:id="@+id/aboutUsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsHeadingTextView"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/aboutUsPhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:src="@drawable/about_us_image"
+            app:layout_constraintBottom_toTopOf="@+id/developerNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutUsHeadingTextView" />
+
+        <TextView
+            android:id="@+id/developerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Seetaram Patel"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/developerGmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="seetarampatel03@gmail.com"
+            android:textColor="@color/white"
+            android:textFontWeight="400"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aboutUsDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textMultiLine"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsLinearLayout"
+        android:justificationMode="inter_word"
+        android:text="Welcome to Math world! I am Seetaram Patel, a passionate math learner and also would like to build a math community where everyone can learn the mathematics. Besides that, I am also learning computer programming at Georgian college. Please send a message to: (111)-111-1111 or send an email to mathmaster@community.com." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

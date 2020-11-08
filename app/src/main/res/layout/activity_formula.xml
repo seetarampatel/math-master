@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormulaActivity">
+
+    <TextView
+        android:id="@+id/FormulaHeadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorPrimary"
+        android:text="@string/Formula_heading"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading"
+        android:textFontWeight="700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_top_padding"
+        android:paddingLeft="@dimen/title_left_padding"/>
+
+    <LinearLayout
+        android:id="@+id/aboutUsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsHeadingTextView"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/algebraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Seetaram Patel"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/trigonometricButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Seetaram Patel"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textFontWeight="500"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

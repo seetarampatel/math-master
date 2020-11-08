@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">All_In_One_Math</string>
+    <string name="app_name">MathMaster</string>
+    <string name="about_us_header">About Us</string>
+    <string name="title_formulaactivity_list">FormulasActivity</string>
+    <string name="title_formulaactivity_detail">FormulaActivity Detail</string>
+    <string name="title_formula_list">Formulas</string>
+    <string name="title_formula_detail">Formula Detail</string>
+    <string name="Formula_heading">Formulas</string>
 </resources>
