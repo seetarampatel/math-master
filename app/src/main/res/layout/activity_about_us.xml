@@ -16,6 +16,7 @@
         android:textSize="@dimen/heading"
         android:textFontWeight="700"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:paddingTop="@dimen/title_top_padding"
         android:paddingLeft="@dimen/title_left_padding"/>
