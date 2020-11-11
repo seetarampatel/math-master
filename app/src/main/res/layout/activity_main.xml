@@ -9,9 +9,9 @@
     <ImageView
         android:id="@+id/mathImage"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:paddingTop="0dp"
-        android:paddingBottom="0dp"
+        android:layout_height="@dimen/main_page_photo_height"
+        android:paddingTop="@dimen/image_padding"
+        android:paddingBottom="@dimen/image_padding"
         android:src="@drawable/math_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,6 @@
         style="@style/Widget.AppCompat.Button.Borderless" />
 
     <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"

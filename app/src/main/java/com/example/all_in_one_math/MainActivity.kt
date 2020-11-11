@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Intents for various activities
         aboutUsButton.setOnClickListener {
             val intent = Intent(applicationContext, AboutUsActivity::class.java)
             startActivity(intent)
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Logout button listener - finish the session and send user to the sign in page
         logoutButton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             finish()

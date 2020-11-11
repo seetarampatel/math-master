@@ -15,9 +15,11 @@ class FormulaDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_formula_details)
 
+        // Taking input from FormulasActivity page about formula category
         formulaDetailsHeadingTextView.text = intent.getStringExtra("FormulaCategory")
         val formulaCategoryName = formulaDetailsHeadingTextView.text
 
+        // Based on various formula category, it will pass the different content to the formulas details text view
         if(formulaCategoryName == "Algebra") {
             formulaDetialsMultipleTextView.setText(
                 "\u2022 a2 – b2 = (a – b)(a + b)\n" +
