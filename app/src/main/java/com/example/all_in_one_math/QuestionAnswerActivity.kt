@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.android.synthetic.main.activity_formula_details.*
 import kotlinx.android.synthetic.main.activity_question_answer.*
+import kotlinx.android.synthetic.main.activity_question_answer.backButton
 
 class QuestionAnswerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +35,11 @@ class QuestionAnswerActivity : AppCompatActivity() {
             else {
                 Toast.makeText(this,"Please try again", Toast.LENGTH_LONG).show()
             }
+        }
+
+        backButton.setOnClickListener {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.example.all_in_one_math
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,10 +12,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_display_question_answer.*
+import kotlinx.android.synthetic.main.activity_display_question_answer.backButton
+import kotlinx.android.synthetic.main.activity_formula_details.*
 import kotlinx.android.synthetic.main.item_question.view.*
 
 class DisplayQuestionAnswer : AppCompatActivity() {
@@ -34,11 +38,22 @@ class DisplayQuestionAnswer : AppCompatActivity() {
         val options = FirestoreRecyclerOptions.Builder<QAForum>().setQuery(query, QAForum::class.java).build()
         adapter = QAForumAdapter(options)
         questionsRecyclerView.adapter = adapter
+
+        backButton.setOnClickListener {
+            val intent = Intent(applicationContext, QuestionAnswerActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {
         super.onStart()
         adapter!!.startListening()
+
+        val user = Firebase.auth.currentUser
+        if (user == null) {
+            val intent = Intent(applicationContext, SignInActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStop() {

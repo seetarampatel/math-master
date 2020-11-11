@@ -19,5 +19,10 @@ class FormulasActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
+        backButton.setOnClickListener {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

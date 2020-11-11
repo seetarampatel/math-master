@@ -10,4 +10,5 @@
     <string name="QAForum_header"><![CDATA[Q&A Forum]]></string>
     <string name="ask_question_title">"Have a Quesiton? "</string>
     <string name="display_questions_header">All Questions</string>
+    <string name="main_page_title"><![CDATA[Please select one of the option >>>]]></string>
 </resources>

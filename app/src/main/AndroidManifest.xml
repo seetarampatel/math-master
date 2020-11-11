@@ -11,17 +11,19 @@
         android:theme="@style/AppTheme">
         <activity android:name=".DisplayQuestionAnswer"></activity>
         <activity android:name=".QuestionAnswerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".FormulaDetailsActivity" />
         <activity android:name=".FormulasActivity"></activity>
         <activity android:name=".AboutUsActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".SignInActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -4,4 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mathImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:src="@drawable/math_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:id="@+id/mainPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:text="@string/main_page_title"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textFontWeight="300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathImage"
+        android:paddingTop="12dp" />
+
+    <Button
+        android:id="@+id/aboutUsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainPageTitle"
+        android:text="About Us"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:id="@+id/formulasButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Formulas"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:id="@+id/videoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formulasButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Videos"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:id="@+id/questionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="QA Forum"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

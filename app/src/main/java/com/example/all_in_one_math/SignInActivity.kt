@@ -41,7 +41,7 @@ class SignInActivity : AppCompatActivity() {
                 // check for the successful sign-in of user
                 val user = FirebaseAuth.getInstance().currentUser
                 // send the user to Main activity
-                val intent = Intent(applicationContext, FormulasActivity::class.java)
+                val intent = Intent(applicationContext, MainActivity::class.java)
                 startActivity(intent)
             } else {
                 // If sign-in not happened successfully, then display the message to the user

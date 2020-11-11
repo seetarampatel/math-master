@@ -1,8 +1,11 @@
 package com.example.all_in_one_math
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_formula_details.*
+import kotlinx.android.synthetic.main.activity_formula_details.backButton
+import kotlinx.android.synthetic.main.activity_formulas.*
 
 /**
  * Formula Reference: Byjus,
@@ -69,6 +72,11 @@ class FormulaDetailsActivity : AppCompatActivity() {
                 "• Cos 3x = 4cos3x-3cos x\n" +
                 "• Tan 3x = [3tanx-tan3x]/[1-3tan2x]"
             )
+        }
+
+        backButton.setOnClickListener {
+            val intent = Intent(applicationContext, FormulasActivity::class.java)
+            startActivity(intent)
         }
 
     }
