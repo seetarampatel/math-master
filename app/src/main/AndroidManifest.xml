@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormulaDetailsActivity"></activity>
-        <activity android:name=".FormulasActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".DisplayQuestionAnswer"></activity>
+        <activity android:name=".QuestionAnswerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".FormulaDetailsActivity" />
+        <activity android:name=".FormulasActivity"></activity>
         <activity android:name=".AboutUsActivity" />
-        <activity android:name=".SignInActivity">
-        </activity>
+        <activity android:name=".SignInActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

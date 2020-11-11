@@ -7,4 +7,7 @@
     <string name="title_formula_detail">Formula Detail</string>
     <string name="Formula_heading">Formulas</string>
     <string name="formula_header">Formulas</string>
+    <string name="QAForum_header"><![CDATA[Q&A Forum]]></string>
+    <string name="ask_question_title">"Have a Quesiton? "</string>
+    <string name="display_questions_header">All Questions</string>
 </resources>
