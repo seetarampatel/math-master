@@ -3,9 +3,7 @@ package com.example.all_in_one_math
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.constraintlayout.solver.state.State
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_display_question_answer.*
 import kotlinx.android.synthetic.main.activity_display_question_answer.backButton
 import kotlinx.android.synthetic.main.activity_formula_details.*
 import kotlinx.android.synthetic.main.item_question.view.*
+import kotlinx.android.synthetic.main.toolbar_forum.*
 
 class DisplayQuestionAnswerActivity : AppCompatActivity() {
 
@@ -46,6 +45,27 @@ class DisplayQuestionAnswerActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, QuestionAnswerActivity::class.java)
             startActivity(intent)
         }
+
+        setSupportActionBar(qaForumToolBar)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.forum_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            R.id.addQuestionButton -> {
+                val intent = Intent(applicationContext, QuestionAnswerActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            R.id.questionListButton -> {
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     // Start listening for changes from firebase
