@@ -6,21 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".QuestionAnswerActivity">
 
+    <include
+        layout="@layout/toolbar_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forumToolBar" />
+
     <TextView
         android:id="@+id/QAForumHeadingTextView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height"
-        android:background="@color/colorPrimary"
+        android:background="@color/theme_color"
         android:text="@string/QAForum_header"
         android:textColor="@color/white"
         android:textSize="@dimen/heading"
         android:textFontWeight="700"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumToolBar"
         android:paddingTop="@dimen/title_top_padding"
         android:paddingLeft="@dimen/title_left_padding"/>
 
+
+    <!--    https://stackoverflow.com/questions/47935135/remove-background-colour-from-floatingactionbutton/48023211-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumToolBar"
+        android:paddingTop="@dimen/title_top_padding"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        app:backgroundTint="@android:color/transparent"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"/>
 
     <TextView
         android:id="@+id/askQuestionTitle"
@@ -76,15 +98,5 @@
         android:textColor="@color/black"
         android:textFontWeight="500"
         android:textSize="@dimen/save_button_size" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/backButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:src="@drawable/ic_baseline_arrow_back_48"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

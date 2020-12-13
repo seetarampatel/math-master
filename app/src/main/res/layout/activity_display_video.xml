@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayVideoActivity">
+
+    <TextView
+        android:id="@+id/displayVideoNameHeadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_color"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading"
+        android:textFontWeight="700"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_top_padding"
+        android:paddingLeft="@dimen/title_left_padding"/>
+
+    <!--    https://stackoverflow.com/questions/47935135/remove-background-colour-from-floatingactionbutton/48023211-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_top_padding"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        app:backgroundTint="@android:color/transparent"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"/>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayVideoNameHeadingTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

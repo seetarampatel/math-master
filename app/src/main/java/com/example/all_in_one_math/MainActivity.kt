@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         videoButton.setOnClickListener {
-            Toast.makeText(this, "Feature will available in near future", Toast.LENGTH_LONG).show()
+            val intent = Intent(applicationContext, VideoActivity::class.java)
+            startActivity(intent)
         }
 
         questionsButton.setOnClickListener {

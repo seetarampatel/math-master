@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoActivity">
+
+    <TextView
+        android:id="@+id/videoHeadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_color"
+        android:text="@string/video_header"
+        android:textColor="@color/white"
+        android:textSize="@dimen/heading"
+        android:textFontWeight="700"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_top_padding"
+        android:paddingLeft="@dimen/title_left_padding"/>
+
+    <!--    https://stackoverflow.com/questions/47935135/remove-background-colour-from-floatingactionbutton/48023211-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_top_padding"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        app:backgroundTint="@android:color/transparent"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"/>
+
+    <!-- Algebra -->
+    <ImageView
+        android:id="@+id/algebraImage"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:paddingTop="@dimen/image_top_padding"
+        android:paddingBottom="@dimen/image_bottom_padding"
+        android:paddingLeft="@dimen/image_left_padding"
+        android:src="@drawable/algebra_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoHeadingTextView" />
+
+    <!-- style="@style/Widget.AppCompat.Button.Borderless" -->
+    <!-- REFERENCE: Stack Overflow - make the button borderless and in capital letters-->
+    <Button
+        android:id="@+id/algebraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/formula_button_top_margin"
+        app:layout_constraintStart_toEndOf="@+id/algebraImage"
+        app:layout_constraintTop_toBottomOf="@+id/videoHeadingTextView"
+        android:paddingLeft="@dimen/formula_button_padding"
+        android:paddingTop="@dimen/formula_button_padding"
+        android:text="Algebra"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/formula_button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <!-- Arithmetic -->
+    <ImageView
+        android:id="@+id/arithmeticImage"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:paddingTop="@dimen/image_top_padding"
+        android:paddingBottom="@dimen/image_bottom_padding"
+        android:paddingLeft="@dimen/image_left_padding"
+        android:src="@drawable/arithmetic_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/algebraImage" />
+
+    <Button
+        android:id="@+id/arithmeticButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/formula_button_top_margin"
+        app:layout_constraintStart_toEndOf="@+id/arithmeticImage"
+        app:layout_constraintTop_toBottomOf="@+id/algebraImage"
+        android:paddingLeft="@dimen/formula_button_padding"
+        android:paddingTop="@dimen/formula_button_padding"
+        android:text="Arithmetic"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/formula_button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <!-- Calculus -->
+    <ImageView
+        android:id="@+id/calculusImage"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:paddingTop="@dimen/image_top_padding"
+        android:paddingBottom="@dimen/image_bottom_padding"
+        android:paddingLeft="@dimen/image_left_padding"
+        android:src="@drawable/calculus_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arithmeticImage" />
+
+    <Button
+        android:id="@+id/calculusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/formula_button_top_margin"
+        app:layout_constraintStart_toEndOf="@+id/calculusImage"
+        app:layout_constraintTop_toBottomOf="@+id/arithmeticImage"
+        android:paddingLeft="@dimen/formula_button_padding"
+        android:paddingTop="@dimen/formula_button_padding"
+        android:text="Calculus"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/formula_button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <!-- trigonometry -->
+    <ImageView
+        android:id="@+id/trigonometryImage"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:paddingTop="@dimen/image_top_padding"
+        android:paddingBottom="@dimen/image_bottom_padding"
+        android:paddingLeft="@dimen/image_left_padding"
+        android:src="@drawable/trigonometry_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculusImage" />
+
+    <Button
+        android:id="@+id/trigonometryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/formula_button_top_margin"
+        app:layout_constraintStart_toEndOf="@+id/trigonometryImage"
+        app:layout_constraintTop_toBottomOf="@+id/calculusImage"
+        android:paddingLeft="@dimen/formula_button_padding"
+        android:paddingTop="@dimen/formula_button_padding"
+        android:text="Trigonometry"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="@dimen/formula_button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

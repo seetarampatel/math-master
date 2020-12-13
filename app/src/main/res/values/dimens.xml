@@ -21,4 +21,7 @@
     <dimen name="button_size">18sp</dimen>
     <dimen name="main_page_photo_height">200dp</dimen>
     <dimen name="image_padding">0dp</dimen>
+    <dimen name="video_button_top_margin">5dp</dimen>
+    <dimen name="video_button_padding">30dp</dimen>
+    <dimen name="video_button_size">18sp</dimen>
 </resources>

@@ -10,27 +10,32 @@
         android:id="@+id/aboutUsHeadingTextView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height"
-        android:background="@color/colorPrimary"
+        android:background="@color/theme_color"
         android:text="@string/about_us_header"
         android:textColor="@color/white"
         android:textSize="@dimen/heading"
         android:textFontWeight="700"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:paddingTop="@dimen/title_top_padding"
         android:paddingLeft="@dimen/title_left_padding"/>
 
+    <!--    https://stackoverflow.com/questions/47935135/remove-background-colour-from-floatingactionbutton/48023211-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_arrow_back_48"
-        app:layout_constraintStart_toEndOf="@+id/aboutUsHeadingTextView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="20dp"
-        app:tint="@color/white" />
+        android:paddingTop="@dimen/title_top_padding"
+        android:layout_marginRight="30dp"
+        android:background="@null"
+        app:backgroundTint="@android:color/transparent"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        app:fabSize="normal"/>
 
 
     <LinearLayout
@@ -94,6 +99,18 @@
         android:justificationMode="inter_word"
         android:text="Welcome to Math world! I am Seetaram Patel, a passionate math learner and also would like to build a math community where everyone can learn the mathematics. Besides that, I am also learning computer programming at Georgian college. Please send a message to: (111)-111-1111 or send an email to mathmaster@community.com." />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUsDescriptionTextView"
+        android:text="Find Us"
+        android:id="@+id/mapButton"
+        android:textColor="#41C1D1"
+        android:textFontWeight="500"
+        android:textSize="@dimen/formula_button_size"
+        style="@style/Widget.AppCompat.Button.Borderless" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
