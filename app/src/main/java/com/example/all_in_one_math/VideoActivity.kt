@@ -4,8 +4,10 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_about_us.*
 
 import kotlinx.android.synthetic.main.activity_video.*
+import kotlinx.android.synthetic.main.activity_video.backButton
 
 class VideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +25,11 @@ class VideoActivity : AppCompatActivity() {
                 intent.putExtra("VideoCategory", videos_list[item].text)
                 startActivity(intent)
             }
+        }
+
+        backButton.setOnClickListener {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
