@@ -36,9 +36,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val barrie = LatLng(44.3591179, -79.7357619)
-        mMap.addMarker(MarkerOptions().position(barrie).title("Marker in Barrie"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(barrie))
+        val barrieLocation = LatLng(44.3591179, -79.7357619)
+        mMap.addMarker(MarkerOptions().position(barrieLocation).title("Marker in Barrie"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(barrieLocation))
 
         mMap.uiSettings.isZoomControlsEnabled = true
     }
