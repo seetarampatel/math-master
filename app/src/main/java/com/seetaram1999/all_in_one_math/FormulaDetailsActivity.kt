@@ -1,11 +1,10 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_formula_details.*
 import kotlinx.android.synthetic.main.activity_formula_details.backButton
-import kotlinx.android.synthetic.main.activity_formulas.*
 
 /**
  * Formula Reference: Byjus,

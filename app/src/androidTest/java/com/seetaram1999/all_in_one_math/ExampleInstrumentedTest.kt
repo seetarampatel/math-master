@@ -1,4 +1,4 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

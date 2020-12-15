@@ -15,6 +15,51 @@
       },
       "oauth_client": [
         {
+          "client_id": "130308811837-h9fco303029dp8882uab3tj9hf776t5t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.all_in_one_math",
+            "certificate_hash": "a9983e56a723ee7cc4605dc7c46db7b62bddd360"
+          }
+        },
+        {
+          "client_id": "130308811837-102oc5q9r80agscff809hjhqhle3h2pt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_9xR9maMTDhAV7PzSEIhyAHksxBvECE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130308811837-102oc5q9r80agscff809hjhqhle3h2pt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130308811837:android:281c3d875dd9b604334e54",
+        "android_client_info": {
+          "package_name": "com.seetaram1999.all_in_one_math"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130308811837-np0oe6g90rqu0aaasj396j7s2uq5akee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seetaram1999.all_in_one_math",
+            "certificate_hash": "a9983e56a723ee7cc4605dc7c46db7b62bddd360"
+          }
+        },
+        {
           "client_id": "130308811837-102oc5q9r80agscff809hjhqhle3h2pt.apps.googleusercontent.com",
           "client_type": 3
         }

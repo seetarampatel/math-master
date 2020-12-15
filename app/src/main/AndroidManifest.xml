@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.all_in_one_math">
+    package="com.seetaram1999.all_in_one_math">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -31,23 +31,23 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.seetaram1999.all_in_one_math.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".DisplayVideoActivity" />
-        <activity android:name=".VideoActivity" />
-        <activity android:name=".DisplayQuestionAnswerActivity" />
-        <activity android:name=".QuestionAnswerActivity" />
-        <activity android:name=".FormulaDetailsActivity" />
-        <activity android:name=".FormulasActivity" />
-        <activity android:name=".AboutUsActivity" />
-        <activity android:name=".SignInActivity">
+        <activity android:name="com.seetaram1999.all_in_one_math.DisplayVideoActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.VideoActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.DisplayQuestionAnswerActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.QuestionAnswerActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.FormulaDetailsActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.FormulasActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.AboutUsActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.seetaram1999.all_in_one_math.MainActivity" />
     </application>
 
 </manifest>

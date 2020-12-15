@@ -1,4 +1,4 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 class QAForum {
     var id: String? = null

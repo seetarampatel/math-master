@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.all_in_one_math"
+        applicationId "com.seetaram1999.all_in_one_math"
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1

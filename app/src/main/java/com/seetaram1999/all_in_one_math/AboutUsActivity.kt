@@ -1,11 +1,9 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_about_us.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class AboutUsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

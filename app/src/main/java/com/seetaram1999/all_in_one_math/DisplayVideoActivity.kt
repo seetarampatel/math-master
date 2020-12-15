@@ -1,13 +1,11 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 import android.content.Intent
 import android.net.Uri
 import android.widget.MediaController
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_about_us.*
 import kotlinx.android.synthetic.main.activity_display_video.*
-import kotlinx.android.synthetic.main.activity_formula_details.*
 
 class DisplayVideoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

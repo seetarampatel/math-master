@@ -1,11 +1,9 @@
-package com.example.all_in_one_math
+package com.seetaram1999.all_in_one_math
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.*
-import androidx.constraintlayout.solver.state.State
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
@@ -16,7 +14,6 @@ import com.google.firebase.firestore.Query
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_display_question_answer.*
 import kotlinx.android.synthetic.main.activity_display_question_answer.backButton
-import kotlinx.android.synthetic.main.activity_formula_details.*
 import kotlinx.android.synthetic.main.item_question.view.*
 import kotlinx.android.synthetic.main.toolbar_forum.*
 
