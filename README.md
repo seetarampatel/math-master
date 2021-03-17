@@ -18,12 +18,6 @@ Reference:
 Screenshots of the Application:
 <hr>
 
-![home](https://user-images.githubusercontent.com/43501913/111543003-d3753100-8748-11eb-87f1-7396bd003600.png)
-![signin](https://user-images.githubusercontent.com/43501913/111543032-dbcd6c00-8748-11eb-9c24-cc4d67ff6cc6.png)
-![about_us](https://user-images.githubusercontent.com/43501913/111543047-e12ab680-8748-11eb-805e-e038dbcf5a6b.png)
-![formulas](https://user-images.githubusercontent.com/43501913/111543068-eab41e80-8748-11eb-935e-a6b8d788fc25.png)
-![formulas_list](https://user-images.githubusercontent.com/43501913/111543069-eb4cb500-8748-11eb-8220-469febda4e7a.png)
-![qa_forum](https://user-images.githubusercontent.com/43501913/111543083-f30c5980-8748-11eb-8ccd-e24e10922577.png)
-![display_qa_forum](https://user-images.githubusercontent.com/43501913/111543093-f69fe080-8748-11eb-893e-80a69ca2237b.png)
-![video](https://user-images.githubusercontent.com/43501913/111543115-00294880-8749-11eb-8dfc-1a834750bcba.png)
-
+<p align="center">
+  <img src="/app/src/main/res/drawable">
+</p>
