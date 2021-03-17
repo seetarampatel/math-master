@@ -2,7 +2,7 @@ This is a All in One Math application where you can find various math formulas a
 
 The app is made in Kotlin and Firebase using android studio.
 
-The app contains four main things. <br />
+The app contains these main features/screens. <br />
 (1) Main Page - Links that send you on various pages <br />
 (2) About Activity - Contains the developer information and link for map <br />
 (3) Map Activity - Display the location of the Barrie in the map <br />
@@ -13,7 +13,3 @@ The app contains four main things. <br />
 Reference:
 (1) Tutorials Point - https://www.tutorialspoint.com/how-do-i-put-a-border-around-an-android-textview
 (2) Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-
-<p align="center">
-  <img src="/app/src/main/res/drawable/signin.png">
-</p>
