@@ -1,4 +1,3 @@
-![home](https://user-images.githubusercontent.com/43501913/111542832-9dd04800-8748-11eb-818e-7db1c378b942.png)
 This is a All in One Math application where you can find various math formulas and videos of different math topics and you can also ask question through the Forum.
 
 The app is made in Kotlin and Firebase using android studio.
@@ -15,9 +14,6 @@ Reference:
 (1) Tutorials Point - https://www.tutorialspoint.com/how-do-i-put-a-border-around-an-android-textview
 (2) Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
-Screenshots of the Application:
-<hr>
-
 <p align="center">
-  <img src="/app/src/main/res/drawable">
+  <img src="app/src/main/res/drawable/signin.png">
 </p>
