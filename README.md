@@ -15,5 +15,5 @@ Reference:
 (2) Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 <p align="center">
-  <img src="app/src/main/res/drawable/signin.png">
+  <img src="/app/src/main/res/drawable/signin.png">
 </p>
